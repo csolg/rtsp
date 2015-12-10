@@ -111,7 +111,8 @@ module RTSP
         (semi_colon >> ssrc).maybe >>
         (semi_colon >> channel).maybe >>
         (semi_colon >> address).maybe >>
-        (semi_colon >> mode).maybe
+        (semi_colon >> mode).maybe >>
+        (semi_colon).maybe
     end
 
     root :header_field
